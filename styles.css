@@ -57,6 +57,8 @@ font-family: 'Roboto';
   padding: 5px 100px;
   background-color: rgba(225, 225, 225, .9);
   margin: 65px;
+  display:grid;
+  align-content:space-around;
 }
 
 .lets-cook-button{
