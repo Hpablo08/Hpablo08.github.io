@@ -1,9 +1,12 @@
 //querySelectors
+var cookButton = document.querySelector('.lets-cook-button')
+var mealForm = document.querySelector('.meal-form')
+var viewCookPot = document.querySelector('.cook-pot-img')
+var viewDish = document.querySelector('.view-dish')
 
 
 
-
-
+//DISHES
 var side = [
   "Miso Glazed Carrots",
   "Coleslaw",
@@ -53,3 +56,25 @@ var dessert = [
   "Croissants",
   "Eclairs",
 ]
+
+
+//Event Listeners
+cookButton.addEventListener('click', displayMeal)
+
+
+// Functions
+function getRandomIndex(array) {
+  var index = Math.floor(Math.random() * array.length);
+  return array[index]
+
+  function getRandomPoster() {
+  currentMeal = new Meal(getRandomIndex(side), getRandomIndex(mainDish), getRandomIndex(dessert))
+  }
+}
+
+function displayMeal (event){
+  event.preventDefault()
+  console.log('hello')
+  viewCookPot.classList.add('hidden')
+  viewDish.classList.remove('hidden')
+}
