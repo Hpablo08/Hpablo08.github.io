@@ -4,13 +4,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class='topNav' <div>
+      <section class='topNav'
     <h1 class='header'>What's for Dinner?</h1>
-    </div>
-      <section class='main-page'>
+  <div class='container'>
+      <form>
+       <p> Username:
+        <input class='text' name='username' size='15' maxlength='30' />
+        <button type= submit class='logIn'>Let's Eat!</button>
+      </form>
+      </p>
+  </div>
+  <div class='main-page'>
       <div class='choice-box'>
         <section class='menus'>
-          <h1 class='options-for-dinner'>What are you looking for?<span class="clrRed">*</span></h1>
+          <h2 class='options-for-dinner'>What are you looking for?<span class="clrRed">*</span></h2>
           <form class='meal-form'>
             <input type='radio' id='sideMeal' name='foods' value'side'>
             <label for'side'>Side</label>
@@ -25,15 +32,14 @@
           </form>
       </div>
       <section class='view-food-box'>
-        <img class='cook-pot-img' src='assets/cookpot.svg' />
+        <img class='cook-pot-img' src='assets/cookpot.svg' alt='cookpot' />
         <section class='view-dish hidden'>
           <h4 class='you-should-make'><em>You should make:<em>
-                <h4>
-                  <h2 class='food-displayed'>Pineapple Chicken!<h2>
+                <h2 class='food-displayed'>Pineapple Chicken!<h2>
         </section>
       </section>
     </section>
-  </section>
+  </div>
 </body>
 <script type="text/javascript" src="main.js"></script>
 
