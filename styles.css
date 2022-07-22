@@ -19,7 +19,7 @@ body{
 
 .topNav{
   background-color: #0fb9b1;
-  height: 38px;
+  height: 30px;
   max-width: 100%;
   border: 0;
   padding 5;
@@ -32,14 +32,48 @@ body{
  font-weight: bold;
 }
 
+/*-----------POPUP-----------*/
+.container{
+  background-color:grey;
+  width: 450px;
+  padding:25px 100px;
+  position: absolute;
+  z-index: 1;
+  transform: translate(-50%, 50%);
+  left: 50%;
+  top: 20%;
+  border-radius:8px;
+  font-family: 'Roboto', sans-serif;
+  
+  align-items: center;
+  justify-content: center;
+
+}
 
 
+.logIn{
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  margin: 8 8 20px auto;
+  background-color:#0fb9b1;
+  font-size: 18px;
+  color: black;
+  border-radius: 5px 5px;
+  border-width:thin;
+    }
 
+.popUp p{
+  font-size: 15px;
+  text-align: center;
+  margin: 20px 0;
+
+}
 /*-------Boxes--------*/
 .main-page{
   display: flex;
   flex-direction: row;
   justify-content: center;
+
 }
 
 .choice-box span{
@@ -69,13 +103,12 @@ align-items: center;
 .cook-pot-img{
   max-width: 40%;
    padding:
-
 }
 
 
 .lets-cook-button{
   background-color: #0fb9b1;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 10px;
   font-weight: 100;
   border-width: thin;
@@ -84,6 +117,12 @@ align-items: center;
   border-radius: 5px 5px;
   margin: 26px 2px;
 }
+
+
+
+
+
+
 
 /*.login-button {
   background-color: #95a5a6;
