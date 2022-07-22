@@ -8,8 +8,11 @@ var foodDisplayed = document.querySelector('.food-displayed')
 var sideMealRadio = document.querySelector('#sideMeal')
 var mainMealRadio = document.querySelector('#mainMeal')
 var dessertMealRadio = document.querySelector('#dessertMeal')
-var logInButton = document.querySelector('.logIn')
+var logInButton = document.querySelector('.logInButton')
 var logInBox = document.querySelector('.container')
+var userNameInput = document.querySelector('.user-name')
+var topNav = document.querySelector('.topNav')
+var header = document.querySelector('.header')
 //var container = document.getElementById("popUp").style.visibility = "hidden";
 
 
@@ -93,8 +96,8 @@ if(sideMealRadio.checked === true){
 
 function logInToPage(){
   event.preventDefault()
-  console.log('HEYYYY')
   logInBox.classList.add('hidden')
+  header.innerText = `What's for Dinner, ${userNameInput.value}?`
 
 }
 
