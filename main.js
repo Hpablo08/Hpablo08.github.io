@@ -1,3 +1,4 @@
+//window.addEventListener('load',logInToPage)
 //querySelectors
 var cookButton = document.querySelector('.lets-cook-button')
 var mealForm = document.querySelector('.meal-form')
@@ -7,7 +8,9 @@ var foodDisplayed = document.querySelector('.food-displayed')
 var sideMealRadio = document.querySelector('#sideMeal')
 var mainMealRadio = document.querySelector('#mainMeal')
 var dessertMealRadio = document.querySelector('#dessertMeal')
-
+var logInButton = document.querySelector('.logIn')
+var logInBox = document.querySelector('.container')
+//var container = document.getElementById("popUp").style.visibility = "hidden";
 
 
 //DISHES
@@ -64,6 +67,7 @@ var dessert = [
 
 //Event Listeners
 cookButton.addEventListener('click', displayMeal)
+logInButton.addEventListener('click', logInToPage)
 
 
 // Functions
@@ -78,7 +82,7 @@ function displayMeal (){
   viewCookPot.classList.add('hidden')
   viewDish.classList.remove('hidden')
   foodDisplayed.innerHTML=``
-  if(sideMealRadio.checked === true){
+if(sideMealRadio.checked === true){
     foodDisplayed.innerText = getRandomIndex(side)
 } else if (mainMealRadio.checked === true) {
   foodDisplayed.innerText = getRandomIndex(mainDish)
@@ -86,3 +90,19 @@ function displayMeal (){
   foodDisplayed.innerText = getRandomIndex(dessert)
 }
 }
+
+function logInToPage(){
+  event.preventDefault()
+  console.log('HEYYYY')
+  logInBox.classList.add('hidden')
+
+}
+
+
+
+
+
+// var logIn = document.querySelector('#logIn').addEventListener('click', logInToPage)
+// function logInToPage(){
+// document.querySelector('.popUp').style.display = 'none'
+// }
