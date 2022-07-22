@@ -3,6 +3,10 @@ var cookButton = document.querySelector('.lets-cook-button')
 var mealForm = document.querySelector('.meal-form')
 var viewCookPot = document.querySelector('.cook-pot-img')
 var viewDish = document.querySelector('.view-dish')
+var foodDisplayed = document.querySelector('.food-displayed')
+var sideMealRadio = document.querySelector('#sideMeal')
+var mainMealRadio = document.querySelector('#mainMeal')
+var dessertMealRadio = document.querySelector('#dessertMeal')
 
 
 
@@ -65,16 +69,20 @@ cookButton.addEventListener('click', displayMeal)
 // Functions
 function getRandomIndex(array) {
   var index = Math.floor(Math.random() * array.length);
-  return array[index]
+  return array[index] }
 
-  function getRandomPoster() {
-  currentMeal = new Meal(getRandomIndex(side), getRandomIndex(mainDish), getRandomIndex(dessert))
-  }
-}
 
-function displayMeal (event){
+function displayMeal (){
   event.preventDefault()
   console.log('hello')
   viewCookPot.classList.add('hidden')
   viewDish.classList.remove('hidden')
+  foodDisplayed.innerHTML=``
+  if(sideMealRadio.checked === true){
+    foodDisplayed.innerText = getRandomIndex(side)
+} else if (mainMealRadio.checked === true) {
+  foodDisplayed.innerText = getRandomIndex(mainDish)
+} else if (dessertMealRadio.checked === true) {
+  foodDisplayed.innerText = getRandomIndex(dessert)
+}
 }
