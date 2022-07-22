@@ -1,41 +1,40 @@
 <html>
-
 <head>
   <link rel="stylesheet" href="./styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <section class='topNav' <div>
+    <section class='topNav' <div>
     <h1 class='header'>What's for Dinner?</h1>
     </div>
-    <section class='main-page'>
+      <section class='main-page'>
       <div class='choice-box'>
         <section class='menus'>
-          <h1 class='options-for-dinner'>What are you looking for?*</h1>
+          <h1 class='options-for-dinner'>What are you looking for?<span class="clrRed">*</span></h1>
           <form class='meal-form'>
-          <input type='radio' id='sideMeal' name='foods' value'side'>
+            <input type='radio' id='sideMeal' name='foods' value'side'>
             <label for'side'>Side</label>
-          <br>
-          <input type='radio' id='mainMeal' name='foods' value'main-dish' >
-          <label for'side'>Main Dish</label>
             <br>
-          <input type='radio' id='dessertMeal' name='foods' value'dessert' checked='checked'>
+            <input type='radio' id='mainMeal' name='foods' value'main-dish'>
+            <label for'side'>Main Dish</label>
+            <br>
+            <input type='radio' id='dessertMeal' name='foods' value'dessert' checked='checked'>
             <label for'side'>Dessert</label>
             <br>
             <button class='lets-cook-button'>LET'S COOK</button>
           </form>
       </div>
       <section class='view-food-box'>
-          <img class='cook-pot-img' src='assets/cookpot.svg' />
-      <section class='view-dish hidden'>
-              <h4 class='you-should-make'><em>You should make:<em><h4>
-              <h2 class='food-displayed'>Pineapple Chicken!<h2>
+        <img class='cook-pot-img' src='assets/cookpot.svg' />
+        <section class='view-dish hidden'>
+          <h4 class='you-should-make'><em>You should make:<em>
+                <h4>
+                  <h2 class='food-displayed'>Pineapple Chicken!<h2>
+        </section>
       </section>
-      </section>
-
     </section>
   </section>
 </body>
 <script type="text/javascript" src="main.js"></script>
+
 </html>
