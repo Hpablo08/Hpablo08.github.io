@@ -76,36 +76,28 @@ logInButton.addEventListener('click', logInToPage)
 // Functions
 function getRandomIndex(array) {
   var index = Math.floor(Math.random() * array.length);
-  return array[index] }
+  return array[index]
+}
 
 
-function displayMeal (){
+function displayMeal() {
   event.preventDefault()
   console.log('hello')
   viewCookPot.classList.add('hidden')
   viewDish.classList.remove('hidden')
-  foodDisplayed.innerHTML=``
-if(sideMealRadio.checked === true){
+  foodDisplayed.innerHTML = ``
+  if (sideMealRadio.checked === true) {
     foodDisplayed.innerText = getRandomIndex(side)
-} else if (mainMealRadio.checked === true) {
-  foodDisplayed.innerText = getRandomIndex(mainDish)
-} else if (dessertMealRadio.checked === true) {
-  foodDisplayed.innerText = getRandomIndex(dessert)
-}
+  } else if (mainMealRadio.checked === true) {
+    foodDisplayed.innerText = getRandomIndex(mainDish)
+  } else if (dessertMealRadio.checked === true) {
+    foodDisplayed.innerText = getRandomIndex(dessert)
+  }
 }
 
-function logInToPage(){
+function logInToPage() {
   event.preventDefault()
   logInBox.classList.add('hidden')
   header.innerText = `What's for Dinner, ${userNameInput.value}?`
 
 }
-
-
-
-
-
-// var logIn = document.querySelector('#logIn').addEventListener('click', logInToPage)
-// function logInToPage(){
-// document.querySelector('.popUp').style.display = 'none'
-// }
