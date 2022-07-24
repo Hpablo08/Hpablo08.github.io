@@ -4,6 +4,7 @@
 - [Overview](#Overview)
 - [Setup](#Setup)
 - [ScreenShots](#ScreenShots)
+- [Features](#Features)
 - [Links](#Links)
 - [Possible Future Extensions](Possible-Future-Extensions)
 - [Contributors](#Contributors)
@@ -26,7 +27,7 @@ This application is a chance for students to build an app that helps users choos
 
 ## Features
 - Any of the radio buttons chosen will output a specific item from that array.
-- The Choose Your Own Adventure I chose was the "login functionality". Users are greeted with a log in screen and enter their name. Their name is used in a greeting displayed on the upper left hand corner of the screen. 
+- The Choose Your Own Adventure I chose was the "login functionality". Users are greeted with a log in screen and enter their name. Their name is used in a greeting displayed on the upper left hand corner of the screen.
 
 ## Links
 - The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/dinner.html).
