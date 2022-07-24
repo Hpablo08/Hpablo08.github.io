@@ -22,9 +22,11 @@ This application is a chance for students to build an app that helps users choos
 - Run open index.html in the terminal
 
 ## Screenshots
-![ScreeShot](Screen Shot 2022-07-24 at 2.10.50 PM)
-![ScreenShot](Screen Shot 2022-07-24 at 2.11.04 PM)
+![ScreeShot](https://frontend.turing.edu/projects/module-1/assets/dinner/dinner_0.png)
 
+## Features
+- Any of the radio buttons chosen will output a specific item from that array.
+- The Choose Your Own Adventure I chose was the "login functionality". Users are greeted with a log in screen and enter their name. Their name is used in a greeting displayed on the upper left hand corner of the screen. 
 
 ## Links
 - The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/dinner.html).
