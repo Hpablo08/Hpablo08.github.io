@@ -32,7 +32,7 @@ This application is a chance for students to build an app that helps users choos
 ## Links
 - The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/dinner.html).
 
-- Checkout the page [here](https://hpablo08.github.io/).
+- Checkout the page [here](https://hpablo08.github.io/whats-for-dinner/).
 
 
 ## Possible Future Extensions
